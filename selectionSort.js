@@ -9,7 +9,13 @@
 // array and putting it on the left until it hits the last element.
 
 function selectionSort(arr) {
-    
+    let minIndex, temp,
+        len = arr.length;
+
+        for(let i = 0; i < len; i++) {
+            minIndex = i;
+            for(let j = i+1; j)
+        }
     
     return arr;
 }
