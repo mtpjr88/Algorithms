@@ -8,14 +8,25 @@
 // thats how it continues to select (find out) the lowest element of the 
 // array and putting it on the left until it hits the last element.
 
-function selectionSort(arr) {
-    let minIndex, temp,
-        len = arr.length;
+// ArrayValue    [3] [4] [1] [6] [8] [4] [6] -- 
+// IndexPosition  0   1   2   3   4   5   6  --i
 
-        for(let i = 0; i < len; i++) {
-            minIndex = i;
-            for(let j = i+1; j)
-        }
-    
-    return arr;
+function selectionSort(arr) {
+  let len = arr.length;
+  let i,j,min;
+
+  for(i=0;i<len-1;i++){ //Outer loop
+    min=i;              // make i position the min Position
+    for(j=i+1;j<len;j++){ // inner loop, one above i to compare
+      if(arr[j] < arr[min]){ // compare if ar index j is less than index min or i
+        min = j; // if it is than store j as the new minimum index
+      }
+    }// Swap the positions
+    let temp = arr[i]; //store index arr[i] in temp 
+    arr[i] = arr[min]; //  store arr[min] inside arr[i]
+    arr[min] = temp;   // store temp which is arr[i] inside arr[min]
+  }
+  return arr;
 }
+
+  console.log(selectionSort([3,4,1,5,8,9,2,6,7]));

@@ -1,4 +1,4 @@
-// fibonacci sequence
+//fibonacci sequence
 
 function fibonacci(num){
   var fibo = [0, 1];
@@ -13,3 +13,4 @@ function fibonacci(num){
 } 
 
 console.log(fibonacci(12));
+
