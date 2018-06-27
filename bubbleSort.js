@@ -1,6 +1,6 @@
 //Bubble sort
 // From my video
-function bubbleSort(arr){
+function bubbleSort1(arr){
   let len = arr.length;
   let i,j,temp;
   for(i = len; i > 0; i--) {
@@ -14,13 +14,13 @@ function bubbleSort(arr){
   }
   return arr;
 }
+/************************************** */
 
-console.log(bubbleSort([4,5,1,7,9,8,6,10]));
 
-// ****************
-//******Another way to do it************* */
+// // ****************
+// //******Another way to do it************* */
 
- function bubbleSort (array) {
+ function bubbleSort2 (array) {
   let len = array.length;
   let swapped;
     for(let i = len; i >= 0; i--){
@@ -34,8 +34,21 @@ console.log(bubbleSort([4,5,1,7,9,8,6,10]));
     } return array;
 }
 
-console.log(bubbleSort([5,4,3,2,1]));
+// console.log(bubbleSort([5,4,3,2,1]));
 
 // TODO implement using functional methods: map filter reduce
 
 
+function bubbleSort3 (arr) {
+  let swapped;
+  for (let left=0; left<arr.length; left++) {
+    for (let right=arr.length-1; right>=left; right--) {
+      if (arr[left] > arr[right]){
+        swapped = arr[right];
+        arr[right] = arr[left];
+        arr[left] = swapped;
+      }
+    }
+  }
+return arr;
+}
