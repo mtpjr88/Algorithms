@@ -36,4 +36,6 @@ console.log(bubbleSort([4,5,1,7,9,8,6,10]));
 
 console.log(bubbleSort([5,4,3,2,1]));
 
+// TODO implement using functional methods: map filter reduce
+
 
