@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/mtpjr88/Algorithms/issues"
   },
-  "homepage": "https://github.com/mtpjr88/Algorithms#readme"
+  "homepage": "https://github.com/mtpjr88/Algorithms#readme",
+  "dependencies": {
+    "bcrypt": "^1.0.3"
+  }
 }
